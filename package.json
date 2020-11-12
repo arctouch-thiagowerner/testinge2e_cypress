@@ -1,0 +1,23 @@
+{
+  "name": "testinge2e_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^5.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://arctouch-thiagowerner@github.com/arctouch-thiagowerner/testinge2e_cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arctouch-thiagowerner/testinge2e_cypress/issues"
+  },
+  "homepage": "https://github.com/arctouch-thiagowerner/testinge2e_cypress#readme"
+}
