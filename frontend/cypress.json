@@ -1,3 +1,9 @@
 {
-  "projectId": "24ahds"
+  "projectId": "24ahds",
+  "reporter": "mocha-junit-reporter",
+  "reporterOptions":
+    {
+      "mochaFile": "test-results/test-results.xml",
+      "toConsole": true
+    }
 }
