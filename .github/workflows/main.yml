@@ -8,6 +8,10 @@ jobs:
         uses: actions/checkout@v1
       - name: Running Cypress
         uses: cypress-io/github-action@v2
+        with:
+          record: true
+          start: npx serve
+          working-directory: frontend
       - name: Uploading Artifacts
         uses: actions/upload-artifact@v2
         with:
@@ -15,10 +19,6 @@ jobs:
           path: cypress/screenshots/*
           name: videos
           path: cypress/videos/*
-        with:
-          record: true
-          start: npx serve
-          working-directory: frontend
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: 720edd9f-fe71-42a8-8149-41cedba18abb
