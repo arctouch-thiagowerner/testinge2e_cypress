@@ -8,6 +8,13 @@ jobs:
         uses: actions/checkout@v1
       - name: Running Cypress
         uses: cypress-io/github-action@v2
+      - name: Uploading Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: screenshots
+          path: cypress/screenshots/*
+          name: videos
+          path: cypress/videos/*
         with:
           record: true
           start: npx serve
