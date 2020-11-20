@@ -12,11 +12,14 @@ jobs:
           record: true
           start: npx serve
           working-directory: frontend
-      - name: Uploading Artifacts
+      - name: Uploading Artifacts - Screenshots
         uses: actions/upload-artifact@v2
         with:
           name: screenshots
           path: cypress/screenshots/*
+      - name: Uploading Artifacts - Videos
+        uses: actions/upload-artifact@v2
+        with:
           name: videos
           path: cypress/videos/*
         env:
