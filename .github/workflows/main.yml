@@ -6,8 +6,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      # https://github.com/cypress-io/github-action
-      - name: cypress run
+      - name: Running Cypress
         uses: cypress-io/github-action@v2
         with:
           record: true
