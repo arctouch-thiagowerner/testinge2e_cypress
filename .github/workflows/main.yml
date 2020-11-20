@@ -1,5 +1,8 @@
 name: integration-tests
 on: [push]
+env:
+  # pass the Dashboard record key as an environment variable
+  CYPRESS_RECORD_KEY: 720edd9f-fe71-42a8-8149-41cedba18abb
 jobs:
   cypress-run:
     runs-on: ubuntu-16.04
@@ -22,6 +25,3 @@ jobs:
         with:
           name: videos
           path: cypress/videos/*
-        env:
-          # pass the Dashboard record key as an environment variable
-          CYPRESS_RECORD_KEY: 720edd9f-fe71-42a8-8149-41cedba18abb
